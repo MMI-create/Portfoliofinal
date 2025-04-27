@@ -1,0 +1,188 @@
+.profile-pic {
+    width: 200px; /* Largeur de l'image */
+    height: 200px; /* Hauteur de l'image */
+    border-radius: 50%; /* Maintient l'image ronde */
+    transform: translateY(100px); /* Descend l'image de 100px */
+    object-fit: cover; /* Garde le contenu de l'image bien cadré */
+}
+
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #f4f4f4;
+    background-image: url('fond.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Garde l'image fixe lors du défilement */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: 2px solid transparent;
+    transition: outline 0.3s;
+}
+
+a:focus {
+    outline-color: #00d8d6;
+    background-color: rgba(0, 216, 214, 0.1); /* Animation focus visible */
+    transition: background-color 0.3s;
+}
+
+/* Header */
+header {
+    background: #000000; /* Tu peux changer en #16213e si tu préfères le bleu foncé */
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 1.5rem;
+}
+
+header nav ul li a {
+    color: #f4f4f4;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+header nav ul li a:hover,
+header nav ul li a:focus {
+    color: #00d8d6;
+    background-color: rgba(0, 216, 214, 0.1);
+    transition: background-color 0.3s;
+}
+
+/* Sections */
+.section {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+#about, #projects, #contact {
+    padding-top: 200px; /* Compense la barre de navigation fixe */
+}
+
+/* About Section */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+}
+
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* optionnel : ou garde 65vh si tu préfères */
+    padding-top: 200px; /* garde le padding pour compenser la nav */
+}
+
+.about-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1); /* subtil effet blanc */
+    max-width: 800px;
+    margin: auto;
+}
+
+.about-intro {
+    font-size: 1.2rem;
+    color: #fff;
+    line-height: 1.8;
+    text-align: center;
+ 
+.about-box {
+    background: #000000;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+}
+
+
+@keyframes fadeColor {
+    0% {
+        color: black;
+        text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.8), 
+                    -3px -3px 2px rgba(255, 255, 255, 0.8), 
+                    -3px 3px 2px rgba(255, 255, 255, 0.8), 
+                    3px -3px 2px rgba(255, 255, 255, 0.8);
+    }
+    50% {
+        color: white;
+        text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.8), 
+                    -3px -3px 2px rgba(0, 0, 0, 0.8), 
+                    -3px 3px 2px rgba(0, 0, 0, 0.8), 
+                    3px -3px 2px rgba(0, 0, 0, 0.8);
+    }
+    100% {
+        color: black;
+        text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.8), 
+                    -3px -3px 2px rgba(255, 255, 255, 0.8), 
+                    -3px 3px 2px rgba(255, 255, 255, 0.8), 
+                    3px -3px 2px rgba(255, 255, 255, 0.8);
+    }
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: #000000;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.animated-title {
+    text-align: center;
+    font-size: 100px;
+    margin-top: 60px;
+    font-weight: bold;
+    color: #333;
+    animation: fadeColor 15s infinite;
+}
+
+h2 {
+    font-size: 3rem; /* ou ajuste à 2.5rem, 4rem selon le rendu souhaité */
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
