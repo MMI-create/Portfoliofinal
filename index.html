@@ -1,18 +1,3 @@
-<?php
-require_once 'model/homemodel.php';
-require_once 'controller/homecontroller.php';
-
-// connect to the database to get the PDO instance
-$pdo = require 'model/connect.php';
-
-// execute a query home
-$homeModel = new HomeModel($pdo);
-$homeController = new HomeController($homeModel);
-$title = $homeController->getTitle();
-$subtitle = $homeController->getSubtitle();
-$showicons = $homeController->getShowIcons();
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 
